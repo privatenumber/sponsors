@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *' # Once a day
-  workflow_dispatch:
 
 jobs:
   update-sponsors:
