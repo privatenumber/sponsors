@@ -1,0 +1,40 @@
+name: sponsorkit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Once a day
+  workflow_dispatch:
+
+jobs:
+  update-sponsors:
+    name: Update sponsors
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8
+        run_install: true
+
+    - name: Update sponsors
+      run: pnpm sponsorkit
+      env:
+        SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
+
+    - name: Commit
+      run: |
+        git config user.name 'Hiroki Osame'
+        git config user.email 'hiroki.osame@gmail.com'
+        git commit -am 'chore: update sponsors'
+        git push
