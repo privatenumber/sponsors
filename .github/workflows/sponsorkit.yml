@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 0 * * *' # Once a day
 
+permissions:
+  contents: write
+
 jobs:
   update-sponsors:
     name: Update sponsors
