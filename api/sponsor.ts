@@ -23,6 +23,7 @@ export default async (
 ) => {
 	const tier = request.query.tier as string;
 	const serveImage = 'image' in request.query;
+	const darkMode = request.query.image === 'dark';
 
 	if (!Object.hasOwn(sponsors, tier)) {
 		return response.status(404).end('Specified sponsor not found');
@@ -34,7 +35,7 @@ export default async (
 	const sponsor = sponsors[tier as SponsorTiers];
 
 	const date = new Date().toISOString().split('T')[0];
-	await kv.incr(date + '_' + tier + '_' + (serveImage ? 'image' : 'link'));
+	await kv.incr(`${date}_${tier}_${serveImage ? 'image' : 'link'}`);
 
 	if (sponsor) {
 		if (serveImage) {
@@ -49,14 +50,10 @@ export default async (
 
 	if (serveImage) {
 		const fileName = tier.replace(/\d$/, '');
-		const [placeholderBanner, heartBg] = await Promise.all([
-			fs.readFile(path.resolve(`./placeholder-banners/${fileName}.svg`), 'utf8'),
-			fs.readFile(path.resolve('./placeholder-banners/heart-bg.png'), { encoding: 'base64' }),
-		]);
-
+		const placeholderBanner = await fs.readFile(path.resolve(`./placeholder-banners/pngs/${fileName}-${darkMode ? 'dark' : 'light'}.png`));
 		return response
-			.setHeader('content-type', 'image/svg+xml')
-			.end(placeholderBanner.replace('{{ heart_base64 }}', heartBg));
+			.setHeader('content-type', 'image/png')
+			.end(placeholderBanner);
 	}
 
 	return response.redirect(302, 'https://github.com/sponsors/privatenumber');
