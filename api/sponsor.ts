@@ -50,7 +50,7 @@ export default async (
 
 	if (serveImage) {
 		const fileName = tier.replace(/\d$/, '');
-		const placeholderBanner = await fs.readFile(path.resolve(`./placeholder-banners/pngs/${fileName}-${darkMode ? 'dark' : 'light'}.png`));
+		const placeholderBanner = await fs.readFile(path.join(process.cwd(), `./placeholder-banners/pngs/${fileName}-${darkMode ? 'dark' : 'light'}.png`));
 		return response
 			.setHeader('content-type', 'image/png')
 			.end(placeholderBanner);
