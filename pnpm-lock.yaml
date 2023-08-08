@@ -26,6 +26,9 @@ importers:
       sponsorkit:
         specifier: ^0.8.7
         version: 0.8.7
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
 
   packages/placeholder-banners:
     devDependencies:
