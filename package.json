@@ -1,6 +1,7 @@
 {
 	"scripts": {
-		"lint": "eslint --cache ."
+		"lint": "eslint --cache .",
+		"placeholder-banners": "cd packages/placeholder-banners && pnpm dev"
 	},
 	"devDependencies": {
 		"@pvtnbr/eslint-config": "^0.34.0",
