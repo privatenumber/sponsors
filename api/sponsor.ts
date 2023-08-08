@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs/promises';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { kv } from '@vercel/kv';
 
 type Sponsor = {
 	image: string;
@@ -31,6 +32,9 @@ export default async (
 	response.setHeader('cache-control', 'public, max-age=86400');
 
 	const sponsor = sponsors[tier as SponsorTiers];
+
+	const date = new Date().toISOString().split('T')[0];
+	await kv.incr(date + '_' + tier + '_' + (serveImage ? 'image' : 'link'));
 
 	if (sponsor) {
 		if (serveImage) {
