@@ -52,7 +52,7 @@ export default async (
 		const fileName = tier.replace(/\d$/, '');
 
 		console.log(process.cwd());
-		console.log(await fs.readdir());
+		console.log(await fs.readdir(''));
 		console.log(await fs.readdir(process.cwd()));
 		const placeholderBanner = await fs.readFile(path.resolve(`./packages/placeholder-banners/pngs/${fileName}-${darkMode ? 'dark' : 'light'}.png`));
 		return response
