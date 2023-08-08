@@ -1,3 +1,4 @@
+import path from 'path';
 import fs from 'fs/promises';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
@@ -43,10 +44,11 @@ export default async (
 	}
 
 	if (serveImage) {
+		console.log(process.cwd());
 		const fileName = tier.replace(/\d$/, '');
 		const [placeholderBanner, heartBg] = await Promise.all([
-			fs.readFile(`./placeholder-banners/${fileName}.svg`, 'utf8'),
-			fs.readFile('./placeholder-banners/heart-bg.png', { encoding: 'base64' }),
+			fs.readFile(path.resolve(`./placeholder-banners/${fileName}.svg`), 'utf8'),
+			fs.readFile(path.resolve('./placeholder-banners/heart-bg.png'), { encoding: 'base64' }),
 		]);
 
 		return response
