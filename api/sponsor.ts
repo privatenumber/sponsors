@@ -44,7 +44,6 @@ export default async (
 	}
 
 	if (serveImage) {
-		console.log(process.cwd());
 		const fileName = tier.replace(/\d$/, '');
 		const [placeholderBanner, heartBg] = await Promise.all([
 			fs.readFile(path.resolve(`./placeholder-banners/${fileName}.svg`), 'utf8'),
