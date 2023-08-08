@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import OcticonSponsorTiers24 from '~icons/octicon/sponsor-tiers-24';
-import MaterialSymbolsChevronRightRounded from '~icons/material-symbols/chevron-right-rounded'
+import MaterialSymbolsChevronRightRounded from '~icons/material-symbols/chevron-right-rounded';
 
 const props = defineProps<{
 	mode?: 'dark';
 	tier: 'platinum' | 'gold' | 'silver';
 }>();
 
-const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
+const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string_.slice(1);
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 		<img
 			class="heart-bg absolute top-0 right-0 opacity-30"
 			src="./heart-bg.png"
-		/>
+		>
 		<div class="content-layer relative">
 			<div
 				class="learn-more-button shadow-sm font-medium absolute flex items-center top-0 right-0 rounded text-pink-700"
@@ -140,7 +140,6 @@ const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1);
 		transform: translateX(-10%) translateY(-30%);
 	}
 }
-
 
 .banner {
 	background-color: #F7F8FA;

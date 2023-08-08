@@ -1,6 +1,6 @@
+import fs from 'fs/promises';
 import { launch } from 'chrome-launcher';
 import CDP from 'chrome-remote-interface';
-import fs from 'fs/promises';
 import { createServer } from 'vite';
 
 const screenshotNode = async (
@@ -72,7 +72,7 @@ const screenshotNode = async (
 
 	for (const banner of banners.nodeIds) {
 		const { attributes } = await tabClient.DOM.getAttributes({ nodeId: banner });
-		const idIndex = attributes.findIndex((attr) => attr === 'id');
+		const idIndex = attributes.indexOf('id');
 		const id = attributes[idIndex + 1];
 
 		const snapshot = await screenshotNode(tabClient, banner);

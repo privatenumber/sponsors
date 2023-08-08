@@ -35,7 +35,7 @@ export default async (
 	const sponsor = sponsors[tier as SponsorTiers];
 
 	const date = new Date().toISOString().split('T')[0];
-	await kv.incr(date + '_' + tier + '_' + (serveImage ? 'image' : 'link'));
+	await kv.incr(`${date}_${tier}_${serveImage ? 'image' : 'link'}`);
 
 	if (sponsor) {
 		if (serveImage) {
