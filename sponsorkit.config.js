@@ -11,30 +11,44 @@ export default defineConfig({
 	width: 800,
 	formats: ['svg', 'png'],
 	tiers: [
-		// Past sponsors, currently only supports GitHub
 		{
 			title: 'Past Sponsors',
 			monthlyDollars: -1,
 			preset: presets.xs,
 		},
-		// Default tier
 		{
-			title: 'Backers',
-			preset: presets.base,
+			title: 'Appreciator',
+			monthlyDollars: 10,
+			preset: presets.small,
 		},
 		{
-			title: 'Sponsors',
-			monthlyDollars: 10,
+			title: 'Supporter',
+			monthlyDollars: 25,
+			preset: presets.small,
+		},
+		{
+			title: 'Project backer',
+			monthlyDollars: 70,
+			preset: presets.medium,
+		},
+		{
+			title: 'Priority Patron',
+			monthlyDollars: 150,
 			preset: presets.medium,
 		},
 		{
 			title: 'Silver Sponsors',
-			monthlyDollars: 50,
+			monthlyDollars: 300,
 			preset: presets.large,
 		},
 		{
 			title: 'Gold Sponsors',
-			monthlyDollars: 100,
+			monthlyDollars: 600,
+			preset: presets.large,
+		},
+		{
+			title: 'Platinum Sponsors',
+			monthlyDollars: 1500,
 			preset: presets.xl,
 		},
 	],

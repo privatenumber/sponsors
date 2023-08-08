@@ -4,6 +4,8 @@
 	},
 	"devDependencies": {
 		"@pvtnbr/eslint-config": "^0.34.0",
+		"@types/node": "^20.4.8",
+		"@vercel/node": "^2.15.8",
 		"eslint": "^8.44.0",
 		"sponsorkit": "^0.8.7"
 	},
