@@ -17,6 +17,11 @@ const sponsors = {
 
 type SponsorTiers = keyof typeof sponsors;
 
+const trackVisitorCount = async (key: string) => {
+	const date = new Date().toISOString().split('T')[0];
+	await kv.incr(`${date}_${key}`);
+};
+
 export default async (
 	request: VercelRequest,
 	response: VercelResponse,
@@ -34,8 +39,13 @@ export default async (
 
 	const sponsor = sponsors[tier as SponsorTiers];
 
-	const date = new Date().toISOString().split('T')[0];
-	await kv.incr(`${date}_${tier}_${serveImage ? 'image' : 'link'}`);
+	/**
+	 * Only track links because images slow down page load and also,
+	 * GitHub caches the images anyway so we can't get accurate results
+	 */
+	if (!serveImage) {
+		await trackVisitorCount(`${tier}_link`);
+	}
 
 	if (sponsor) {
 		if (serveImage) {
