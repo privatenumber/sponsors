@@ -24,15 +24,15 @@ const screenshotNode = async (
 };
 
 (async () => {
-	// tsx bugs out on this. Need to come back to it
-	const server = await createServer({
-		configFile: false,
-		root: __dirname,
-		server: {
-			port: 1337,
-		},
-	});
-	await server.listen();
+	// // tsx bugs out on this. Need to come back to it
+	// const server = await createServer({
+	// 	configFile: false,
+	// 	root: __dirname,
+	// 	server: {
+	// 		port: 1337,
+	// 	},
+	// });
+	// await server.listen();
 
 	const chrome = await launch({
 		chromeFlags: [
@@ -76,7 +76,7 @@ const screenshotNode = async (
 		const id = attributes[idIndex + 1];
 
 		const snapshot = await screenshotNode(tabClient, banner);
-		await fs.writeFile(`./pngs/${id}.png`, snapshot);
+		await fs.writeFile(`./placeholder-banners/pngs/${id}.png`, snapshot);
 	}
 
 	await tabClient.close();

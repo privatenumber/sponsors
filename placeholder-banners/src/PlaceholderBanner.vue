@@ -39,7 +39,7 @@ const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string
 			</p>
 
 			<p v-if="tier !== 'silver'">
-				Sponsoring will help ensure the continued maintenance and development of this project and many others.
+				Sponsor to support the development of projects you use and love!
 			</p>
 		</div>
 	</div>
