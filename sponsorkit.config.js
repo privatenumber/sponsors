@@ -17,6 +17,10 @@ export default defineConfig({
 			preset: presets.xs,
 		},
 		{
+			title: 'Donors',
+			preset: presets.xs,
+		},
+		{
 			title: 'Appreciator',
 			monthlyDollars: 10,
 			preset: presets.small,
@@ -24,7 +28,7 @@ export default defineConfig({
 		{
 			title: 'Supporter',
 			monthlyDollars: 25,
-			preset: presets.small,
+			preset: presets.base,
 		},
 		{
 			title: 'Project backer',

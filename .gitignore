@@ -21,3 +21,6 @@ node_modules/
 
 # env
 .env*
+
+# Sponsorkit cache
+sponsorkit/.cache.json
