@@ -18,7 +18,6 @@ export default async (
 ) => {
 	const keys = await kv.keys('*');
 
-
 	const data: Data = {
 		platinum: {},
 		gold: {},
@@ -30,7 +29,6 @@ export default async (
 		key,
 		...key.split('_') as KeyComponents,
 	] as const);
-
 
 	const dates = new Set(keyComponents.map(([, date]) => date));
 	const baseDateObject = Object.fromEntries(Array.from(dates).sort().map(date => [date, 0]));
