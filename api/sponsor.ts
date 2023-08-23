@@ -1,7 +1,6 @@
-import path from 'path';
-import fs from 'fs/promises';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { kv } from '@vercel/kv';
+import type { SponsorTiers } from './types.js';
 
 type Sponsor = {
 	image: string;
@@ -13,9 +12,7 @@ const sponsors = {
 	gold: undefined,
 	silver1: undefined,
 	silver2: undefined,
-} satisfies Record<string, Sponsor | undefined>;
-
-type SponsorTiers = keyof typeof sponsors;
+} satisfies Record<SponsorTiers, Sponsor | undefined>;
 
 const trackVisitorCount = async (key: string) => {
 	const date = new Date().toISOString().split('T')[0];
