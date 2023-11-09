@@ -24,15 +24,13 @@ const screenshotNode = async (
 };
 
 (async () => {
-	// // tsx bugs out on this. Need to come back to it
-	// const server = await createServer({
-	// 	configFile: false,
-	// 	root: __dirname,
-	// 	server: {
-	// 		port: 1337,
-	// 	},
-	// });
-	// await server.listen();
+	const server = await createServer({
+		root: __dirname,
+		server: {
+			port: 1337,
+		},
+	});
+	await server.listen();
 
 	const chrome = await launch({
 		chromeFlags: [
@@ -46,7 +44,7 @@ const screenshotNode = async (
 	});
 
 	const { targetId } = await browserClient.Target.createTarget({
-		url: 'http://localhost:5173',
+		url: server.resolvedUrls!.local[0],
 	});
 
 	const tabClient = await CDP({
@@ -82,4 +80,5 @@ const screenshotNode = async (
 	await tabClient.close();
 	await browserClient.close();
 	await chrome.kill();
+	await server.close();
 })();
