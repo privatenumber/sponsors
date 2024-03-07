@@ -3,7 +3,7 @@
 	"scripts": {
 		"lint": "lint --cache --ignore-pattern banners/src/@types .",
 		"dev:banners": "vite banners --open",
-		"snap-pngs": "pnpm tsx banners/snap-pngs.ts"
+		"snap-banners": "pnpm tsx banners/snap-banners.ts"
 	},
 	"dependencies": {
 		"@vercel/kv": "^1.0.1",

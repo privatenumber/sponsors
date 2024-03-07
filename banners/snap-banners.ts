@@ -10,6 +10,7 @@ const screenshotNode = async (
 	const { model } = await client.DOM.getBoxModel({ nodeId });
 	const [x, y] = model.border;
 	const screenshot = await client.Page.captureScreenshot({
+		format: 'webp',
 		captureBeyondViewport: true,
 		clip: {
 			x,
@@ -78,7 +79,7 @@ const screenshotNode = async (
 		const id = attributes[idIndex + 1];
 
 		const snapshot = await screenshotNode(tabClient, banner);
-		await fs.writeFile(`./banners/pngs/${id}.png`, snapshot);
+		await fs.writeFile(`./banners/assets/${id}.webp`, snapshot);
 	}
 
 	await tabClient.close();

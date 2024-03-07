@@ -57,7 +57,7 @@ export default async (
 
 	if (serveImage) {
 		const fileName = tier.replace(/\d$/, '');
-		return response.redirect(302, `/banners/pngs/${fileName}-${darkMode ? 'dark' : 'light'}.png`);
+		return response.redirect(302, `/banners/assets/${fileName}-${darkMode ? 'dark' : 'light'}.webp`);
 	}
 
 	return response.redirect(302, 'https://github.com/sponsors/privatenumber');
