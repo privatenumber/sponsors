@@ -2,8 +2,9 @@
 	"type": "module",
 	"scripts": {
 		"lint": "lint --cache --ignore-pattern banners/src/@types .",
-		"dev:banners": "vite banners --open",
-		"snap-banners": "pnpm tsx banners/snap-banners.ts"
+		"banners:dev": "vite banners --open",
+		"banners:snap": "pnpm tsx banners/snap-banners.ts",
+		"banners:stats": "pnpm tsx banners/get-stats.ts"
 	},
 	"dependencies": {
 		"@vercel/kv": "^1.0.1",

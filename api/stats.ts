@@ -2,7 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { kv } from '@vercel/kv';
 import type { SponsorTiers } from './types.js';
 
-type Data = {
+export type StatsData = {
 	[Tier in SponsorTiers]: {
 		[Type in 'link' | 'image']?: {
 			[date: string]: number;
@@ -18,7 +18,7 @@ export default async (
 ) => {
 	const keys = await kv.keys('*');
 
-	const data: Data = {
+	const data: StatsData = {
 		platinum: {},
 		gold: {},
 		silver1: {},
