@@ -3,8 +3,8 @@ import { kv } from '@vercel/kv';
 import type { SponsorTiers } from './types.js';
 
 type Data = {
-	[key in SponsorTiers]: {
-		[key in 'link' | 'image']?: {
+	[Tier in SponsorTiers]: {
+		[Type in 'link' | 'image']?: {
 			[date: string]: number;
 		};
 	};

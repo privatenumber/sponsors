@@ -24,8 +24,9 @@ const screenshotNode = async (
 };
 
 (async () => {
+	const root = new URL('.', import.meta.url).pathname;
 	const server = await createServer({
-		root: __dirname,
+		root,
 		server: {
 			port: 1337,
 		},
@@ -58,13 +59,16 @@ const screenshotNode = async (
 	// Set transparent bg for screenshot
 	tabClient.Emulation.setDefaultBackgroundColorOverride({
 		color: {
-			r: 0, g: 0, b: 0, a: 0,
+			r: 0,
+			g: 0,
+			b: 0,
+			a: 0,
 		},
 	});
 
-	const { root } = await tabClient.DOM.getDocument();
+	const document = await tabClient.DOM.getDocument();
 	const banners = await tabClient.DOM.querySelectorAll({
-		nodeId: root.nodeId,
+		nodeId: document.root.nodeId,
 		selector: '.banner',
 	});
 

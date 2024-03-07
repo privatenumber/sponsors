@@ -1,5 +1,7 @@
 <script setup lang="ts">
+// eslint-disable-next-line import/no-unresolved,import/extensions
 import OcticonSponsorTiers24 from '~icons/octicon/sponsor-tiers-24';
+// eslint-disable-next-line import/no-unresolved,import/extensions
 import MaterialSymbolsChevronRightRounded from '~icons/material-symbols/chevron-right-rounded';
 
 const props = defineProps<{
@@ -21,7 +23,10 @@ const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string
 		>
 		<div class="content-layer relative">
 			<div
-				class="learn-more-button shadow-sm font-medium absolute flex items-center top-0 right-0 rounded text-pink-700"
+				class="
+					learn-more-button shadow-sm font-medium absolute
+					flex items-center top-0 right-0 rounded text-pink-700
+				"
 			>
 				Learn more
 				<MaterialSymbolsChevronRightRounded class="w-5 h-5" />
@@ -35,7 +40,8 @@ const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string
 			</div>
 
 			<p>
-				Your banner & link will be showcased right here, reaching a wide audience across all my projects and websites.
+				Your banner & link will be showcased right here,
+				reaching a wide audience across all my projects and websites.
 			</p>
 
 			<p v-if="tier !== 'silver'">
