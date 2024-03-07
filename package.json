@@ -1,7 +1,7 @@
 {
 	"type": "module",
 	"scripts": {
-		"lint": "lint --cache .",
+		"lint": "lint --cache --ignore-pattern banners/src/@types .",
 		"dev:banners": "vite banners --open",
 		"snap-pngs": "pnpm tsx banners/snap-pngs.ts"
 	},
@@ -26,6 +26,7 @@
 		"tailwindcss": "^3.4.1",
 		"tsx": "^4.7.1",
 		"typescript": "^5.4.2",
-		"unplugin-icons": "^0.18.5"
+		"unplugin-icons": "^0.18.5",
+		"unplugin-vue-components": "^0.26.0"
 	}
 }

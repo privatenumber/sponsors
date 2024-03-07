@@ -1,15 +1,12 @@
 <script setup lang="ts">
-// eslint-disable-next-line import/no-unresolved,import/extensions
-import OcticonSponsorTiers24 from '~icons/octicon/sponsor-tiers-24';
-// eslint-disable-next-line import/no-unresolved,import/extensions
-import MaterialSymbolsChevronRightRounded from '~icons/material-symbols/chevron-right-rounded';
-
 const props = defineProps<{
 	mode?: 'dark';
 	tier: 'platinum' | 'gold' | 'silver';
 }>();
 
-const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string_.slice(1);
+const capitalize = (
+	string_: string,
+) => string_.charAt(0).toUpperCase() + string_.slice(1);
 </script>
 
 <template>
@@ -29,13 +26,13 @@ const capitalize = (string_: string) => string_.charAt(0).toUpperCase() + string
 				"
 			>
 				Learn more
-				<MaterialSymbolsChevronRightRounded class="w-5 h-5" />
+				<IconMaterialSymbolsChevronRightRounded class="w-5 h-5" />
 			</div>
 
 			<div
 				class="heading flex items-center"
 			>
-				<OcticonSponsorTiers24 class="text-pink-600 heart-icon" />
+				<IconOcticonSponsorTiers24 class="text-pink-600 heart-icon" />
 				Become a {{ capitalize(props.tier) }} sponsor!
 			</div>
 
