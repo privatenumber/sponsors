@@ -74,7 +74,7 @@ const screenshotNode = async (
 		const id = attributes[idIndex + 1];
 
 		const snapshot = await screenshotNode(tabClient, banner);
-		await fs.writeFile(`./placeholder-banners/pngs/${id}.png`, snapshot);
+		await fs.writeFile(`./banners/pngs/${id}.png`, snapshot);
 	}
 
 	await tabClient.close();
