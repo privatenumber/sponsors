@@ -8,6 +8,10 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     IconMaterialSymbolsChevronRightRounded: typeof import('~icons/material-symbols/chevron-right-rounded')['default']
+    IconOcticonHeart24: typeof import('~icons/octicon/heart24')['default']
+    IconOcticonHeartFill: typeof import('~icons/octicon/heart-fill')['default']
+    IconOcticonHeartFill16: typeof import('~icons/octicon/heart-fill16')['default']
+    IconOcticonHeartFill24: typeof import('~icons/octicon/heart-fill24')['default']
     IconOcticonSponsorTiers24: typeof import('~icons/octicon/sponsor-tiers24')['default']
   }
 }

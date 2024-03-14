@@ -1,18 +1,6 @@
-<script setup lang="ts">
-const props = defineProps<{
-	mode?: 'dark';
-	tier: 'platinum' | 'gold' | 'silver';
-}>();
-
-const capitalize = (
-	string_: string,
-) => string_.charAt(0).toUpperCase() + string_.slice(1);
-</script>
-
 <template>
 	<div
 		class="banner relative sans-serif rounded-md overflow-hidden"
-		:class="[tier, mode]"
 	>
 		<img
 			class="heart-bg absolute top-0 right-0 opacity-30"
@@ -25,32 +13,29 @@ const capitalize = (
 					flex items-center top-0 right-0 rounded text-pink-700
 				"
 			>
-				Learn more
+				Sponsor $10
 				<IconMaterialSymbolsChevronRightRounded class="w-5 h-5" />
 			</div>
 
 			<div
 				class="heading flex items-center"
 			>
-				<IconOcticonSponsorTiers24 class="text-pink-600 heart-icon" />
-				Become a {{ capitalize(props.tier) }} sponsor!
+				<IconOcticonHeartFill24 class="heart-icon mt-0.5" />
+				Love this project? <span class="font-extralight tracking-wide">Show your support!</span>
 			</div>
 
-			<p>
-				Your banner & link will be showcased right here,
-				reaching a wide audience across all my projects and websites.
-			</p>
-
-			<p v-if="tier !== 'silver'">
-				Sponsor to support the development of projects you use and love!
+			<p class="max-w-[70%]">
+				If this project has helped you, you can give back by funding development.
+				No matter the amount, your support will be greatly appreciated!
 			</p>
 		</div>
 	</div>
 </template>
 
 <style scoped>
-
-.platinum {
+.banner {
+	background: linear-gradient(25deg, #4158D0f0 0%, #C850C0f0 46%, #FFCC70f0 100%);
+	color: rgb(255 255 255 / 90%);
 	width: 830px;
 	height: 130px;
 	font-size: 15px;
@@ -58,117 +43,44 @@ const capitalize = (
 	@apply
 		px-6
 		py-4;
-
-	& .heading {
-		@apply
-			mb-3
-			gap-2;
-	}
-
-	& .heart-icon {
-		@apply w-7;
-	}
-
-	& .learn-more-button {
-		@apply
-			px-4
-			py-2
-			gap-2;
-	}
-
-	& .heart-bg {
-		width: 30%;
-		transform: translateX(-10%) translateY(-30%);
-	}
-}
-
-.gold {
-	width: 830px;
-	height: 100px;
-	font-size: 14px;
-
-	@apply
-		px-6
-		py-2;
-
-	& .heading {
-		@apply
-			mb-1
-			gap-2;
-	}
-	& .heart-icon {
-		@apply w-6;
-	}
-
-	& .learn-more-button {
-		@apply
-			px-4
-			py-1
-			gap-2;
-	}
-
-	& .heart-bg {
-		width: 25%;
-		transform: translateX(-20%) translateY(-30%);
-	}
-}
-
-.silver {
-	width: 410px;
-	height: 100px;
-	font-size: 12px;
-
-	@apply
-		px-4
-		py-4;
-
-	& .heading {
-		@apply
-			mb-2
-			gap-1;
-	}
-	& .heart-icon {
-		@apply w-6;
-	}
-
-	& .learn-more-button {
-		@apply
-			px-2
-			py-1
-			gap-1;
-	}
-
-	& .heart-bg {
-		width: 45%;
-		transform: translateX(-10%) translateY(-30%);
-	}
-}
-
-.banner {
-	background-color: #F7F8FA;
-	border: 1px solid #D7D8DB;
-	color: rgb(37 41 47 / 70%);
-
-	&.dark {
-		background-color: #22262C;
-		color: #CBD1D8;
-		border-color: #373B41;
-	}
 }
 
 .heading {
+	@apply
+			mb-3
+			gap-2;
+
 	font-weight: 600;
 	font-size: 1.5em;
+	text-shadow: 0px 2px 2px #00000030;
 }
 
 .learn-more-button {
+	@apply
+			px-4
+			py-2
+			gap-2;
+
 	font-size: 1em;
-	background-color: rgb(255 255 255 / 50%);
+	background-color: rgb(255 255 255 / 90%);
+}
+
+.heart-icon {
+	@apply w-6;
+}
+
+.heart-bg {
+	width: 30%;
+	transform: translateX(-10%) translateY(-30%);
 }
 
 p {
-	line-height: 1.4em;
-	font-size: 1em;
-	margin: 4px 0;
+	@apply
+		mt-2
+		leading-6
+		text-base;
+
+	color: rgba(255 255 255 / 90%);
+	text-shadow: 0px 2px 4px #00000030;
 }
 </style>

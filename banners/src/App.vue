@@ -8,13 +8,12 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 			id="platinum-light"
 			tier="platinum"
 		/>
-
 		<PlaceholderBanner
 			id="platinum-dark"
 			mode="dark"
 			tier="platinum"
 		/>
-
+<!--
 		<PlaceholderBanner
 			id="gold-light"
 			tier="gold"
@@ -35,7 +34,7 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 			id="silver-dark"
 			mode="dark"
 			tier="silver"
-		/>
+		/> -->
 	</div>
 </template>
 
