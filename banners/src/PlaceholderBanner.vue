@@ -21,11 +21,11 @@
 				class="heading flex items-center"
 			>
 				<IconOcticonHeartFill24 class="heart-icon mt-0.5" />
-				Love this project? <span class="font-extralight tracking-wide">Show your support!</span>
+				Do you rely on this project? <span class="font-normal italic tracking-wide">Show your support!</span>
 			</div>
 
 			<p class="max-w-[70%]">
-				If this project has helped you, you can give back by funding development.
+				If this project has helped you, you can help back by funding development.
 				No matter the amount, your support will be greatly appreciated!
 			</p>
 		</div>
