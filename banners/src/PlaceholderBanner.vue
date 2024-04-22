@@ -13,7 +13,7 @@
 					flex items-center top-0 right-0 rounded text-pink-700
 				"
 			>
-				Sponsor $10
+				Sponsor $2
 				<IconMaterialSymbolsChevronRightRounded class="w-5 h-5" />
 			</div>
 
