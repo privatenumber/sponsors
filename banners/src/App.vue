@@ -13,7 +13,7 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 			mode="dark"
 			tier="platinum"
 		/>
-<!--
+		<!--
 		<PlaceholderBanner
 			id="gold-light"
 			tier="gold"

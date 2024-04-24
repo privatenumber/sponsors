@@ -12,7 +12,7 @@ export type StatsData = {
 
 type KeyComponents = [string, SponsorTiers, 'link' | 'image'];
 
-export default async (
+const requestHandler = async (
 	_request: VercelRequest,
 	response: VercelResponse,
 ) => {
@@ -50,3 +50,5 @@ export default async (
 
 	return response.json(data);
 };
+
+export default requestHandler;

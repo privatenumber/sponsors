@@ -19,7 +19,7 @@ const trackVisitorCount = async (key: string) => {
 	await kv.incr(`${date}_${key}`);
 };
 
-export default async (
+const requestHandler = async (
 	request: VercelRequest,
 	response: VercelResponse,
 ) => {
@@ -62,3 +62,5 @@ export default async (
 
 	return response.redirect(302, 'https://github.com/sponsors/privatenumber');
 };
+
+export default requestHandler;

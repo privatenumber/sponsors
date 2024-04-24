@@ -21,7 +21,8 @@
 				class="heading flex items-center"
 			>
 				<IconOcticonHeartFill24 class="heart-icon mt-0.5" />
-				Do you rely on this project? <span class="font-normal italic tracking-wide">Show your support!</span>
+				Do you rely on this project?
+				<span class="font-normal italic tracking-wide">Show your support!</span>
 			</div>
 
 			<p class="max-w-[70%]">
