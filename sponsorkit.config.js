@@ -9,7 +9,7 @@ export default defineConfig({
 
 	// Rendering configs
 	width: 800,
-	formats: ['svg', 'png'],
+	formats: ['svg'],
 	tiers: [
 		{
 			title: 'Past Sponsors',
