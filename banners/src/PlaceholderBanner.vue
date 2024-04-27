@@ -36,8 +36,8 @@ defineProps<{
 
 <style scoped>
 .container {
-	max-width: 410px;
-	min-width: 410px;
+	max-width: 412px;
+	min-width: 412px;
 	height: 130px;
 }
 

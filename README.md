@@ -6,13 +6,13 @@ If you want to support my work, you can sponsor me on [GitHub Sponsors](https://
 
 ## Banner
 
-Dimensions: 830px × 130px
+Dimensions: 412px × 130px
 
 Placement: Top of page (somewhere above the fold)
 
 <p align="center">
-	<a href="https://github.com/sponsors/privatenumber?frequency=one-time"><img width="410" src="./banners/assets/donate.webp"></a>
-	<a href="https://github.com/sponsors/privatenumber?frequency=recurring"><img width="410" src="./banners/assets/sponsor.webp"></a>
+	<a href="https://github.com/sponsors/privatenumber?frequency=one-time"><img width="412" src="./banners/assets/donate.webp"></a>
+	<a href="https://github.com/sponsors/privatenumber?frequency=recurring"><img width="412" src="./banners/assets/sponsor.webp"></a>
 </p>
 
 ## Badges
