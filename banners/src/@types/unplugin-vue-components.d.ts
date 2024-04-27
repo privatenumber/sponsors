@@ -7,7 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    IconMaterialSymbolsChevronFavorite: typeof import('~icons/material-symbols/chevron-favorite')['default']
     IconMaterialSymbolsChevronRightRounded: typeof import('~icons/material-symbols/chevron-right-rounded')['default']
+    IconMaterialSymbolsCoffee: typeof import('~icons/material-symbols/coffee')['default']
+    IconMaterialSymbolsFavorite: typeof import('~icons/material-symbols/favorite')['default']
+    IconMaterialSymbolsHeart: typeof import('~icons/material-symbols/heart')['default']
     IconOcticonHeart24: typeof import('~icons/octicon/heart24')['default']
     IconOcticonHeartFill: typeof import('~icons/octicon/heart-fill')['default']
     IconOcticonHeartFill16: typeof import('~icons/octicon/heart-fill16')['default']
