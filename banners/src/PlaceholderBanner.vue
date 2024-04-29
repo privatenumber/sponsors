@@ -46,11 +46,11 @@ defineProps<{
 			mb-3
 			gap-2;
 
-	text-shadow: 0px 2px 4px #00000030;
+	text-shadow: 0px 2px 4px #00000070;
 }
 
 .button {
-	background-color: rgb(255 255 255 / 90%);
+	background-color: rgb(255 255 255 / 80%);
 }
 
 .heart-icon {
@@ -63,6 +63,6 @@ p {
 		;
 
 	color: rgba(255 255 255 / 90%);
-	text-shadow: 0px 2px 5px #00000030;
+	text-shadow: 0px 2px 5px #00000070;
 }
 </style>
