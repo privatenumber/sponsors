@@ -7,27 +7,36 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 		<PlaceholderBanner
 			id="donate"
 			class="donate"
-			title="Enjoyed this project?"
+			title="Love using this project?"
 		>
 			<template #action>
 				<IconMaterialSymbolsCoffee class="mr-1 text-pink-700" />
 				<span class="text-pink-700">Buy me coffee</span>
 			</template>
 
-			I'm glad you found it useful!
-			If you're feeling generous, I'd really appreciate a coffee.
+			I'm glad you found it so useful!
+			If you're feeling generous, I'd appreciate a cup of coffee. Thanks!
+
+			<template #bg>
+				<img class="w-4/5 -translate-x-6 -translate-y-16" src="./heart.png">
+			</template>
 		</PlaceholderBanner>
+
 		<PlaceholderBanner
 			id="sponsor"
 			class="sponsor"
-			title="Sponsorship program"
+			title="Sponsors-only benefits"
 		>
 			<template #action>
 				<IconMaterialSymbolsFavorite class="mr-1 text-cyan-700" />
 				<span class="text-cyan-700">Join for $2</span>
 			</template>
 
-			Join my sponsorship program to get early access to project development & releases, and Discussions!
+			Access the private dev repo for free support, pre-release downloads, and influence project planning!
+
+			<template #bg>
+				<img class="w-2/3 -translate-x-4 -translate-y-10" src="./galaxy-brain.png">
+			</template>
 		</PlaceholderBanner>
 		<!--
 		<PlaceholderBanner

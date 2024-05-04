@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
 	<BannerContainer class="container">
-		<div class="content-layer relative">
+		<div class="relative">
 			<div
 				v-if="$slots.action"
 				class="
@@ -31,6 +31,9 @@ defineProps<{
 				<slot />
 			</p>
 		</div>
+		<template #bg>
+			<slot name="bg" />
+		</template>
 	</BannerContainer>
 </template>
 
@@ -46,7 +49,7 @@ defineProps<{
 			mb-3
 			gap-2;
 
-	text-shadow: 0px 2px 4px #00000070;
+	text-shadow: 0px 2px 5px #00000060;
 }
 
 .button {
@@ -63,6 +66,6 @@ p {
 		;
 
 	color: rgba(255 255 255 / 90%);
-	text-shadow: 0px 2px 5px #00000070;
+	text-shadow: 0px 2px 4px #00000050;
 }
 </style>
