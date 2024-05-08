@@ -22,7 +22,7 @@ export default defineConfig({
 		},
 		{
 			title: 'Sponsors',
-			monthlyDollars: 4,
+			monthlyDollars: 2,
 			preset: presets.base,
 		},
 		{
