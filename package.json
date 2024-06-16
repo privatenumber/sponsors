@@ -20,7 +20,7 @@
 		"@vercel/node": "^3.0.27",
 		"@vitejs/plugin-vue": "^5.0.4",
 		"autoprefixer": "^10.4.19",
-		"lintroll": "^1.4.1",
+		"lintroll": "^1.6.1",
 		"postcss": "^8.4.38",
 		"sponsorkit": "^0.9.3",
 		"tailwindcss": "^3.4.3",

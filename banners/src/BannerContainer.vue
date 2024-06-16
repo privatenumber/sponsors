@@ -5,7 +5,9 @@
 		<div class="relative z-10">
 			<slot />
 		</div>
-		<div class="bg"><slot name="bg" /></div>
+		<div class="bg">
+			<slot name="bg" />
+		</div>
 	</div>
 </template>
 

@@ -18,7 +18,10 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 			If you're feeling generous, I'd appreciate a cup of coffee. Thanks!
 
 			<template #bg>
-				<img class="w-4/5 -translate-x-6 -translate-y-16" src="./heart.png">
+				<img
+					class="w-4/5 -translate-x-6 -translate-y-16"
+					src="./heart.png"
+				>
 			</template>
 		</PlaceholderBanner>
 
@@ -32,10 +35,14 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 				<span class="text-cyan-700">Join for $2</span>
 			</template>
 
-			Access the private dev repo for free support, pre-release downloads, and influence project planning!
+			Access the private dev repo for free support, pre-release downloads,
+			and influence project planning!
 
 			<template #bg>
-				<img class="w-2/3 -translate-x-4 -translate-y-10" src="./galaxy-brain.png">
+				<img
+					class="w-2/3 -translate-x-4 -translate-y-10"
+					src="./galaxy-brain.png"
+				>
 			</template>
 		</PlaceholderBanner>
 		<!--
