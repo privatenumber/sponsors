@@ -1,4 +1,4 @@
-import { defineConfig, presets } from 'sponsorkit';
+import { defineConfig, tierPresets } from 'sponsorkit';
 
 export default defineConfig({
 	// Providers configs
@@ -7,43 +7,57 @@ export default defineConfig({
 		login: 'privatenumber',
 	},
 
-	// Rendering configs
-	width: 800,
-	formats: ['svg'],
-	tiers: [
+	renders: [
 		{
-			title: 'Past Sponsors',
-			monthlyDollars: -1,
-			preset: presets.xs,
+			name: 'sponsors',
+			width: 800,
+			formats: ['svg'],
+			tiers: [
+				{
+					title: 'Past Sponsors',
+					monthlyDollars: -1,
+					preset: tierPresets.xs,
+				},
+				{
+					title: 'Donors',
+					preset: tierPresets.xs,
+				},
+				{
+					title: 'Sponsors',
+					monthlyDollars: 2,
+					preset: tierPresets.base,
+				},
+				{
+					title: 'Bronze Sponsors',
+					monthlyDollars: 10,
+					preset: tierPresets.medium,
+				},
+				{
+					title: 'Silver Sponsors',
+					monthlyDollars: 25,
+					preset: tierPresets.large,
+				},
+				{
+					title: 'Gold Sponsors',
+					monthlyDollars: 100,
+					preset: tierPresets.large,
+				},
+				{
+					title: 'Premium Sponsors',
+					monthlyDollars: 300,
+					preset: tierPresets.xl,
+				},
+			],
 		},
 		{
-			title: 'Donors',
-			preset: presets.xs,
-		},
-		{
-			title: 'Sponsors',
-			monthlyDollars: 2,
-			preset: presets.base,
-		},
-		{
-			title: 'Bronze Sponsors',
-			monthlyDollars: 10,
-			preset: presets.medium,
-		},
-		{
-			title: 'Silver Sponsors',
-			monthlyDollars: 25,
-			preset: presets.large,
-		},
-		{
-			title: 'Gold Sponsors',
-			monthlyDollars: 100,
-			preset: presets.large,
-		},
-		{
-			title: 'Premium Sponsors',
-			monthlyDollars: 300,
-			preset: presets.xl,
+			name: 'list',
+			width: 800,
+			formats: ['svg'],
+			tiers: [
+				{
+					preset: tierPresets.xs,
+				},
+			],
 		},
 	],
 });
