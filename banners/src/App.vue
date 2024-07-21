@@ -32,7 +32,7 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 		>
 			<template #action>
 				<IconMaterialSymbolsFavorite class="mr-1 text-cyan-700" />
-				<span class="text-cyan-700">Join for $2</span>
+				<span class="text-cyan-700">Join for $4</span>
 			</template>
 
 			Access the private dev repo for free support, pre-release downloads,
