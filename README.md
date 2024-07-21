@@ -12,7 +12,7 @@ Placement: Top of page (somewhere above the fold)
 
 <p align="center">
 	<a href="https://github.com/sponsors/privatenumber/sponsorships?tier_id=398771"><img width="412" src="./banners/assets/donate.webp"></a>
-	<a href="https://github.com/sponsors/privatenumber/sponsorships?tier_id=397608"><img width="412" src="./banners/assets/sponsor.webp"></a>
+	<a href="https://github.com/sponsors/privatenumber/sponsorships?tier_id=416984"><img width="412" src="./banners/assets/sponsor.webp"></a>
 </p>
 
 ## Badges
