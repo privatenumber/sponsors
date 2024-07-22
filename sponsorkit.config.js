@@ -54,6 +54,7 @@ export default defineConfig({
 			width: 640,
 			formats: ['svg'],
 			includePastSponsors: true,
+			includePrivate: true,
 			tiers: [
 				{
 					preset: tierPresets.xs,
