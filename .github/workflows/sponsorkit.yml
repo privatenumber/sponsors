@@ -29,7 +29,9 @@ jobs:
           run_install: true
 
       - name: Update sponsors
-        run: pnpm sponsorkit
+        run: |
+          pnpm sponsorkit
+          pnpm tsx ./sponsorkit/get-sponsors.ts
         env:
           SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
 
