@@ -1,6 +1,7 @@
 name: sponsorkit
 
 on:
+  push:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *" # Once a day
@@ -35,10 +36,7 @@ jobs:
 
       - name: Commit
         run: |
-          if [[ -z $(git status --porcelain --untracked-files=no) ]]; then
-            echo "No changes to commit"
-            exit 0
-          fi
+          git add sponsorkit
 
           git config user.name 'Hiroki Osame'
           git config user.email 'hiroki.osame@gmail.com'
