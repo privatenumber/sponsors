@@ -56,7 +56,7 @@ importers:
         version: 8.4.47
       sponsorkit:
         specifier: github:privatenumber/sponsorkit#npm/webp
-        version: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/b8f0519c70963edd2211f55401879bf5d7940991
+        version: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/5d5e271a127f51921608544f8f3da5dbfe2d32df
       tailwindcss:
         specifier: ^3.4.12
         version: 3.4.12(ts-node@10.9.2(@types/node@22.5.5)(typescript@5.6.2))
@@ -3138,8 +3138,8 @@ packages:
   spdx-license-ids@3.0.20:
     resolution: {integrity: sha512-jg25NiDV/1fLtSgEgyvVyDunvaNHbuwF9lfNV17gSmPFAlYzdfNBlLtLzXTevwkPj7DhGbmN9VnmJIgLnhvaBw==}
 
-  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/b8f0519c70963edd2211f55401879bf5d7940991:
-    resolution: {tarball: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/b8f0519c70963edd2211f55401879bf5d7940991}
+  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/5d5e271a127f51921608544f8f3da5dbfe2d32df:
+    resolution: {tarball: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/5d5e271a127f51921608544f8f3da5dbfe2d32df}
     version: 0.15.5
     hasBin: true
 
@@ -6988,7 +6988,7 @@ snapshots:
 
   spdx-license-ids@3.0.20: {}
 
-  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/b8f0519c70963edd2211f55401879bf5d7940991:
+  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/5d5e271a127f51921608544f8f3da5dbfe2d32df:
     dependencies:
       '@antfu/utils': 0.7.10
       chrome-launcher: 1.1.2
