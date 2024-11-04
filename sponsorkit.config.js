@@ -7,10 +7,8 @@ export default defineConfig({
 		login: 'privatenumber',
 	},
 
-	name: 'sponsors',
 	width: 800,
-	formats: ['svg'],
-
+	formats: ['svg', 'png', 'webp'],
 	prorateOnetime: true,
 
 	tiers: [
