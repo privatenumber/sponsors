@@ -55,8 +55,8 @@ importers:
         specifier: ^8.4.47
         version: 8.4.47
       sponsorkit:
-        specifier: github:privatenumber/sponsorkit#npm/prorate-onetime-sponsorships
-        version: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/150d9710f3ae93fcb0a9f31e6f2b15c0b6ac8dfc
+        specifier: ^0.16.0
+        version: 0.16.0
       tailwindcss:
         specifier: ^3.4.12
         version: 3.4.12(ts-node@10.9.2(@types/node@22.5.5)(typescript@5.6.2))
@@ -2806,9 +2806,8 @@ packages:
   spdx-license-ids@3.0.20:
     resolution: {integrity: sha512-jg25NiDV/1fLtSgEgyvVyDunvaNHbuwF9lfNV17gSmPFAlYzdfNBlLtLzXTevwkPj7DhGbmN9VnmJIgLnhvaBw==}
 
-  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/150d9710f3ae93fcb0a9f31e6f2b15c0b6ac8dfc:
-    resolution: {tarball: https://codeload.github.com/privatenumber/sponsorkit/tar.gz/150d9710f3ae93fcb0a9f31e6f2b15c0b6ac8dfc}
-    version: 0.15.5
+  sponsorkit@0.16.0:
+    resolution: {integrity: sha512-1uF3KP4k3uDDFsHKAvQV/4h4V34ao3pEPhASnaXoLXEVCLXgtVZqNDqrTuIASZvRdm7GGW1uEq44YUYUoeVRhw==}
     hasBin: true
 
   stable-hash@0.0.4:
@@ -6162,7 +6161,7 @@ snapshots:
 
   spdx-license-ids@3.0.20: {}
 
-  sponsorkit@https://codeload.github.com/privatenumber/sponsorkit/tar.gz/150d9710f3ae93fcb0a9f31e6f2b15c0b6ac8dfc:
+  sponsorkit@0.16.0:
     dependencies:
       '@antfu/utils': 0.7.10
       consola: 3.2.3
