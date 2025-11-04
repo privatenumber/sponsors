@@ -29,7 +29,7 @@
 		"tailwindcss": "^3.4.12",
 		"tsx": "^4.19.1",
 		"typescript": "^5.6.2",
-		"unplugin-icons": "^0.19.3",
+		"unplugin-icons": "^22.5.0",
 		"unplugin-vue-components": "^0.27.4"
 	}
 }
