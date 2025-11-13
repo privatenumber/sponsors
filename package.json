@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"@octokit/graphql": "^8.1.1",
-		"@vercel/kv": "^2.0.0",
+		"@vercel/kv": "^3.0.0",
 		"chrome-launcher": "^1.1.2",
 		"chrome-remote-interface": "^0.33.2",
 		"code-tag": "^1.2.0",
