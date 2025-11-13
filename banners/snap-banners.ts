@@ -17,7 +17,7 @@ const screenshotNode = async (
 			y,
 			width: model.width,
 			height: model.height,
-			scale: 1,
+			scale: 2,
 		},
 	});
 
