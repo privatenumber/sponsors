@@ -8,7 +8,7 @@
 		"banners:stats": "pnpm tsx banners/get-stats.ts"
 	},
 	"dependencies": {
-		"@octokit/graphql": "^8.1.1",
+		"@octokit/graphql": "^9.0.3",
 		"@vercel/kv": "^3.0.0",
 		"chrome-launcher": "^1.1.2",
 		"chrome-remote-interface": "^0.33.2",
