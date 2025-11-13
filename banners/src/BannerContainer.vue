@@ -12,6 +12,8 @@
 </template>
 
 <style scoped>
+@reference "tailwindcss";
+
 .banner {
 	color: rgb(255 255 255 / 90%);
 

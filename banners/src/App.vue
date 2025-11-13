@@ -71,9 +71,7 @@ import PlaceholderBanner from './PlaceholderBanner.vue';
 </template>
 
 <style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 .donate {
 	background: linear-gradient(25deg, #4158D0f0 0%, #C850C0f0 46%, #FFCC70f0 100%);

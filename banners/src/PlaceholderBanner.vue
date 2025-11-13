@@ -38,6 +38,8 @@ defineProps<{
 </template>
 
 <style scoped>
+@reference "tailwindcss";
+
 .container {
 	max-width: 412px;
 	min-width: 412px;
