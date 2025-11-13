@@ -26,7 +26,7 @@
 		"lintroll": "^1.10.0",
 		"postcss": "^8.4.47",
 		"sponsorkit": "^17.0.0",
-		"tailwindcss": "^3.4.12",
+		"tailwindcss": "^4.1.17",
 		"tsx": "^4.19.1",
 		"typescript": "^5.6.2",
 		"unplugin-icons": "^22.5.0",
