@@ -1,6 +1,6 @@
 {
 	"type": "module",
-	"packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
+	"packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b",
 	"scripts": {
 		"lint": "lintroll --cache --ignore-pattern banners/src/@types --ignore-pattern sponsorkit/*.json .",
 		"banners:dev": "vite banners --open",
@@ -10,26 +10,26 @@
 	"dependencies": {
 		"@octokit/graphql": "^9.0.3",
 		"@vercel/kv": "^3.0.0",
-		"chrome-launcher": "^1.1.2",
-		"chrome-remote-interface": "^0.33.2",
+		"chrome-launcher": "^1.2.1",
+		"chrome-remote-interface": "^0.33.3",
 		"code-tag": "^1.2.0",
-		"vite": "^7.2.2",
+		"vite": "^7.2.4",
 		"vue": "^3.5.24"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.406",
+		"@iconify/json": "^2.2.409",
 		"@tailwindcss/vite": "^4.1.17",
 		"@types/chrome-remote-interface": "^0.31.14",
 		"@types/node": "^24.10.1",
-		"@vercel/node": "^5.5.5",
-		"@vitejs/plugin-vue": "^6.0.1",
+		"@vercel/node": "^5.5.9",
+		"@vitejs/plugin-vue": "^6.0.2",
 		"autoprefixer": "^10.4.22",
-		"lintroll": "^1.10.0",
-		"postcss": "^8.4.47",
+		"lintroll": "^1.25.0",
+		"postcss": "^8.5.6",
 		"sponsorkit": "^17.0.0",
 		"tailwindcss": "^4.1.17",
-		"tsx": "^4.19.1",
-		"typescript": "^5.6.2",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3",
 		"unplugin-icons": "^22.5.0",
 		"unplugin-vue-components": "^30.0.0"
 	}
