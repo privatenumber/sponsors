@@ -1,6 +1,6 @@
 {
 	"type": "module",
-	"packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b",
+	"packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a",
 	"scripts": {
 		"lint": "lintroll --cache --ignore-pattern banners/src/@types --ignore-pattern sponsorkit/*.json .",
 		"banners:dev": "vite banners --open",
@@ -14,14 +14,14 @@
 		"chrome-remote-interface": "^0.33.3",
 		"code-tag": "^1.2.0",
 		"vite": "^7.2.4",
-		"vue": "^3.5.24"
+		"vue": "^3.5.25"
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.409",
+		"@iconify/json": "^2.2.412",
 		"@tailwindcss/vite": "^4.1.17",
-		"@types/chrome-remote-interface": "^0.31.14",
+		"@types/chrome-remote-interface": "^0.33.0",
 		"@types/node": "^24.10.1",
-		"@vercel/node": "^5.5.9",
+		"@vercel/node": "^5.5.13",
 		"@vitejs/plugin-vue": "^6.0.2",
 		"autoprefixer": "^10.4.22",
 		"lintroll": "^1.25.0",
