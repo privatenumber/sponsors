@@ -30,7 +30,7 @@
 		"tailwindcss": "^4.1.18",
 		"tsx": "^4.20.6",
 		"typescript": "^5.9.3",
-		"unplugin-icons": "^22.5.0",
+		"unplugin-icons": "^23.0.1",
 		"unplugin-vue-components": "^30.0.0"
 	}
 }
