@@ -24,7 +24,7 @@
 		"@vercel/node": "^5.5.23",
 		"@vitejs/plugin-vue": "^6.0.3",
 		"autoprefixer": "^10.4.23",
-		"lintroll": "^1.25.0",
+		"lintroll": "^1.29.1",
 		"postcss": "^8.5.6",
 		"sponsorkit": "^17.0.0",
 		"tailwindcss": "^4.1.18",
