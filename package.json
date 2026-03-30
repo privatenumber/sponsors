@@ -4,8 +4,8 @@
 	"scripts": {
 		"lint": "lintroll --cache --ignore-pattern banners/src/@types --ignore-pattern sponsorkit/*.json .",
 		"banners:dev": "vite banners --open",
-		"banners:snap": "pnpm tsx banners/snap-banners.ts",
-		"banners:stats": "pnpm tsx banners/get-stats.ts"
+		"banners:snap": "node banners/snap-banners.ts",
+		"banners:stats": "node banners/get-stats.ts"
 	},
 	"dependencies": {
 		"@octokit/graphql": "^9.0.3",
@@ -28,7 +28,6 @@
 		"postcss": "^8.5.8",
 		"sponsorkit": "^17.0.0",
 		"tailwindcss": "^4.1.18",
-		"tsx": "^4.20.6",
 		"typescript": "^5.9.3",
 		"unplugin-icons": "^22.5.0",
 		"unplugin-vue-components": "^30.0.0"

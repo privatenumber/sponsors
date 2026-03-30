@@ -1,4 +1,4 @@
-import type { StatsData } from '../api/stats.js';
+import type { StatsData } from '../api/stats.ts';
 
 const sum = (array: number[]) => array.reduce((a, b) => a + b, 0);
 

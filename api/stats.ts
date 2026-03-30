@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { kv } from '@vercel/kv';
-import type { SponsorTiers } from './types.js';
+import type { SponsorTiers } from './types.ts';
 
 export type StatsData = {
 	[Tier in SponsorTiers]: {

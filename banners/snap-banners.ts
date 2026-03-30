@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import { launch } from 'chrome-launcher';
 import CDP from 'chrome-remote-interface';
 import { createServer } from 'vite';
