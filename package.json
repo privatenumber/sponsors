@@ -30,6 +30,6 @@
 		"tailwindcss": "^4.1.18",
 		"typescript": "^5.9.3",
 		"unplugin-icons": "^22.5.0",
-		"unplugin-vue-components": "^30.0.0"
+		"unplugin-vue-components": "^32.0.0"
 	}
 }
