@@ -28,7 +28,7 @@
 		"postcss": "^8.5.8",
 		"sponsorkit": "^17.0.0",
 		"tailwindcss": "^4.1.18",
-		"typescript": "^5.9.3",
+		"typescript": "^6.0.3",
 		"unplugin-icons": "^22.5.0",
 		"unplugin-vue-components": "^30.0.0"
 	}
